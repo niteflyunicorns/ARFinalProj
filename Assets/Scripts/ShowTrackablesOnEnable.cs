@@ -36,7 +36,7 @@ public class ShowTrackablesOnEnable : MonoBehaviour
         }
     }
 
-    void ShowTrackables(bool show)
+    public void ShowTrackables(bool show)
     {
         if (cloudManager)
         {

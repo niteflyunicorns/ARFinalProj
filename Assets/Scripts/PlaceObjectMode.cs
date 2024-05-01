@@ -11,6 +11,7 @@ public class PlaceObjectMode : MonoBehaviour
     GameObject placedPrefab;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     TrackingState EarthTrackingState;
+    // ShowTrackablesOnEnable T;
 
     void OnEnable()
     {
@@ -41,6 +42,7 @@ public class PlaceObjectMode : MonoBehaviour
 
 
             InteractionController.EnableMode("Main");
+            // T.ShowTrackables(false);
         }
     }
 

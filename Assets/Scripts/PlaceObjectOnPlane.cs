@@ -12,6 +12,7 @@ public class PlaceObjectOnPlane : MonoBehaviour
 
     GameObject spawnedObject;
     ARRaycastManager raycaster;
+    // ARPlaneManager planeManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     void OnPlaceObject( InputValue value ) {
@@ -22,11 +23,13 @@ public class PlaceObjectOnPlane : MonoBehaviour
 
             if ( spawnedObject == null ) {
                 spawnedObject = Instantiate( placedPrefab, hitPose.position, hitPose.rotation );
-                ScreenLog.Log( "An object was created!" );
+                spawnedObject.AddComponent<ARAnchor>();
+                // planeManager.enabled = False;
+                // ScreenLog.Log( "An object was created!" );
             }
             else {
-                spawnedObject.transform.SetPositionAndRotation( hitPose.position, hitPose.rotation );
-                ScreenLog.Log( "The object was moved..." );
+                // spawnedObject.transform.SetPositionAndRotation( hitPose.position, hitPose.rotation );
+                // ScreenLog.Log( "The object was moved..." );
             }
         }
     }
