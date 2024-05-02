@@ -15,6 +15,12 @@ public class PlaceObjectOnPlane : MonoBehaviour
     // ARPlaneManager planeManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
+    public void SetPlacedPrefab(GameObject prefab)
+    {
+        placedPrefab = prefab;
+    }
+
+
     void OnPlaceObject( InputValue value ) {
         Vector2 touchPosition = value.Get<Vector2>();
 

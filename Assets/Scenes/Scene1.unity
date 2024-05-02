@@ -187,7 +187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &70203056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -203,10 +203,10 @@ RectTransform:
   - {fileID: 1873863392}
   m_Father: {fileID: 1926043007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 720, y: -60}
+  m_SizeDelta: {x: 480, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70203057
 MonoBehaviour:
@@ -252,12 +252,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 876404556}
-        m_TargetAssemblyTypeName: PlaceObjectMode, Assembly-CSharp
+      - m_Target: {fileID: 876404559}
+        m_TargetAssemblyTypeName: PlaceObjectOnPlane, Assembly-CSharp
         m_MethodName: SetPlacedPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 6523671951286351335, guid: af4e535fb1303674c808e0bcaa8cea5a,
+          m_ObjectArgument: {fileID: 6523671951286351335, guid: b54369f0d42399540983b80a3a2e3727,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -275,6 +275,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: PlaceObject
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 876404558}
+        m_TargetAssemblyTypeName: ShowTrackablesOnEnable, Assembly-CSharp
+        m_MethodName: Disable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &70203058
@@ -587,7 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22b698697930214b92905bb0dc0f860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placedPrefab: {fileID: 6523671951286351335, guid: af4e535fb1303674c808e0bcaa8cea5a,
+  placedPrefab: {fileID: 6523671951286351335, guid: 7adfd1588cf33634395555557eaac7d2,
     type: 3}
 --- !u!1 &167112808
 GameObject:
@@ -719,7 +731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &379110301
 RectTransform:
   m_ObjectHideFlags: 0
@@ -735,10 +747,10 @@ RectTransform:
   - {fileID: 1522161656}
   m_Father: {fileID: 1926043007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1080, y: -60}
+  m_SizeDelta: {x: 720, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &379110302
 MonoBehaviour:
@@ -784,12 +796,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 876404556}
-        m_TargetAssemblyTypeName: PlaceObjectMode, Assembly-CSharp
+      - m_Target: {fileID: 876404559}
+        m_TargetAssemblyTypeName: PlaceObjectOnPlane, Assembly-CSharp
         m_MethodName: SetPlacedPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 6523671951286351335, guid: af4e535fb1303674c808e0bcaa8cea5a,
+          m_ObjectArgument: {fileID: 6523671951286351335, guid: 7adfd1588cf33634395555557eaac7d2,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -807,6 +819,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: PlaceObject
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 876404558}
+        m_TargetAssemblyTypeName: ShowTrackablesOnEnable, Assembly-CSharp
+        m_MethodName: Disable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &379110303
@@ -1038,7 +1062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Map 1
+  m_text: Place Planets!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1233,9 +1257,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.9171851, g: 0.61698115, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.33161265, g: 0.74852455, b: 0.8490566, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1256,12 +1280,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 876404556}
-        m_TargetAssemblyTypeName: PlaceObjectMode, Assembly-CSharp
+      - m_Target: {fileID: 876404559}
+        m_TargetAssemblyTypeName: PlaceObjectOnPlane, Assembly-CSharp
         m_MethodName: SetPlacedPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 6523671951286351335, guid: af4e535fb1303674c808e0bcaa8cea5a,
+          m_ObjectArgument: {fileID: 6523671951286351335, guid: 7adfd1588cf33634395555557eaac7d2,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -1279,6 +1303,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: PlaceObject
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 876404558}
+        m_TargetAssemblyTypeName: ShowTrackablesOnEnable, Assembly-CSharp
+        m_MethodName: Disable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &747589454
@@ -1407,6 +1443,7 @@ GameObject:
   - component: {fileID: 876404557}
   - component: {fileID: 876404558}
   - component: {fileID: 876404556}
+  - component: {fileID: 876404559}
   m_Layer: 0
   m_Name: PlaceObjectMode
   m_TagString: Untagged
@@ -1421,7 +1458,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876404555}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6dc7993a63568dc4db5e816abd17a27a, type: 3}
   m_Name: 
@@ -1455,6 +1492,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sessionOrigin: {fileID: 96030236}
+--- !u!114 &876404559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876404555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e22b698697930214b92905bb0dc0f860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placedPrefab: {fileID: 0}
 --- !u!1 &951737119
 GameObject:
   m_ObjectHideFlags: 0

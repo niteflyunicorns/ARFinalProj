@@ -36,6 +36,22 @@ public class ShowTrackablesOnEnable : MonoBehaviour
         }
     }
 
+    public void Disable() {
+        cloudManager.SetTrackablesActive(false);
+        cloudManager.enabled = false;
+
+        planeManager.SetTrackablesActive(false);
+        planeManager.enabled = false;
+    }
+
+    public void Enable() {
+        cloudManager.SetTrackablesActive(true);
+        cloudManager.enabled = true;
+
+        planeManager.SetTrackablesActive(true);
+        planeManager.enabled = true;
+    }    
+
     public void ShowTrackables(bool show)
     {
         if (cloudManager)

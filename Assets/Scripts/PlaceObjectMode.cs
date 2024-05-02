@@ -13,6 +13,12 @@ public class PlaceObjectMode : MonoBehaviour
     TrackingState EarthTrackingState;
     // ShowTrackablesOnEnable T;
 
+    // void Start()
+    // {
+    //     raycaster = GetComponent<ARRaycastManager>();
+    // }
+
+
     void OnEnable()
     {
         UIController.ShowUI("PlaceObject");
