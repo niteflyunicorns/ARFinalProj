@@ -449,7 +449,6 @@ GameObject:
   - component: {fileID: 96030238}
   - component: {fileID: 96030241}
   - component: {fileID: 96030242}
-  - component: {fileID: 96030243}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -531,8 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PointCloudPrefab: {fileID: 1854016325464908, guid: 7f988301d22a4406da0408106c75d212,
-    type: 3}
+  m_PointCloudPrefab: {fileID: 0}
 --- !u!114 &96030240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: f6e8e09ebe845234d8f4d64cfc2a68a2,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 1
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -591,19 +589,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placedPrefab: {fileID: 6523671951286351335, guid: af4e535fb1303674c808e0bcaa8cea5a,
     type: 3}
---- !u!114 &96030243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96030234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d75d53aa808f624dbc2d1af2124a541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sessionOrigin: {fileID: 96030236}
 --- !u!1 &167112808
 GameObject:
   m_ObjectHideFlags: 0
